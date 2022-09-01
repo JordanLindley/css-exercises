@@ -8,7 +8,6 @@ body {
 
 .header {
   display: flex;
-  justify-content: left;
   align-items: center;
   height: 72px;
   background: darkmagenta;
@@ -32,7 +31,6 @@ body {
 .content {
   display: flex;
   flex: 1;
-  gap: 28px
 }
 
 .sidebar {
@@ -40,18 +38,22 @@ body {
   width: 300px;
   text-align: left;
   background-color: royalblue;
-  flex: none;
+  flex-shrink: 0;
+  padding: 16px;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  list-style-type: none;
-  font-size: 25px;
-  flex-shrink: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 a {
+  font-size: 24px;
   text-decoration: none;
   color: white;
 }
@@ -60,8 +62,7 @@ a {
   display: flex;
   /* justify-content: center; */
   flex-wrap: wrap;
-  gap: 32px;
-  flex: 1 1 0%;
+  gap: 16px;
   padding: 32px;
 }
 
